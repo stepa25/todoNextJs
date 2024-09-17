@@ -1,0 +1,37 @@
+.item {
+    background-color: #FFEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 17px; 
+    border-radius: 10px;
+    cursor: pointer;
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .text {
+        flex-grow: 1;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    button {
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+    }
+}
+
+.completed {
+    background-color: #EBFFED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 17px; 
+    border-radius: 10px;
+    text-decoration: line-through;
+    cursor: pointer;
+}

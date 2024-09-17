@@ -1,0 +1,53 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .app {
+        width: 650px;
+        height: 800px;
+        background-color: #E6E6E6;
+        border-radius: 15px;
+        padding: 45px 60px;
+        display: grid;
+        grid-template-rows: 66px 621px;
+        gap: 22px;
+
+        &Controls {
+            display: grid;
+            grid-template-columns: auto 160px;
+
+            &Search {
+                border: none;
+                border-radius: 10px 0 0 10px;
+                background-color: #ffff;
+                font-size: 18px;
+                padding: 5px 10px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            &Click {
+                border: none;
+                border-radius: 0 10px 10px 0;
+                background-color: #FBCC28;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+
+        &List {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #ffff;
+            overflow: auto;
+            height: 670px;
+        }
+    }
+}
